@@ -3,6 +3,9 @@ const http = require('http');
 const express = require('express');
 const socketio = require('socket.io');
 const formatMessage = require('./utils/messages');
+
+const SERVER_PORT = process.env.PORT || 3001;
+
 const {
   userJoin,
   getCurrentUser,
@@ -67,4 +70,4 @@ io.on('connection', socket => {
 });
 
 
-server.listen(3001, () => console.log("Server running on port http://localhost:3001"));
+server.listen(SERVER_PORT, () => console.log("Server running on port http://localhost:3001"));
