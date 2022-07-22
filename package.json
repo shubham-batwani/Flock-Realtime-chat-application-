@@ -1,6 +1,6 @@
 {
   "name": "realtime-chat",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "server.js",
   "scripts": {
@@ -16,5 +16,9 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
+  }
+  "engines": {
+    "node" : "9",
+    "npm" : "5
   }
 }
